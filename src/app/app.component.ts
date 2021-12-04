@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
      
 @Component({ 
-    selector: 'my-app',
-    template: `<label>Введите имя:</label>
-                 <input [(ngModel)]="name" placeholder="name">
-                 <h1>Добро пожаловать {{name}}!</h1>`
+    selector: 'my-root',
+    templateUrl: './app.component.html'
 })
 export class AppComponent { 
-    name= '';
-}
+  onClick(){
+    document.body.style.background = "green";
+      }
+      
+  }
